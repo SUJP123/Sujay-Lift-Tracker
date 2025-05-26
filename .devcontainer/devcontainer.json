@@ -1,0 +1,23 @@
+{
+  "name": "Sujay-Lift-Tracker",
+  "workspaceFolder": "/workspace",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    }
+  },
+  "postCreateCommand": "pip install -r requirements.txt",
+  "portsAttributes": {
+    "5173": {
+      "label": "React App",
+      "onAutoForward": "openBrowser"
+    },
+    "8000": {
+      "label": "FastAPI App",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
