@@ -1,0 +1,8 @@
+# Any Pycache Directories 
+__pycache__/
+
+# Env Variables
+.env
+
+# Database File
+mydatabase.db
